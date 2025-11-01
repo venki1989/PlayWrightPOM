@@ -63,7 +63,7 @@ public class PlaywrightFactory {
 			break;
 		case "chrome":
 			tlBrowser.set(
-					getPlaywright().chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(true)));
+					getPlaywright().chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(false)));
 			break;
 		case "edge":
 			tlBrowser.set(
