@@ -37,7 +37,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/venki1989/PlayWrightPOM'
-                    sh "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_regressions.xml"
+                    sh "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/regression.xml"
                     
                 }
             }
