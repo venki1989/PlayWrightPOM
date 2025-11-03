@@ -3,14 +3,14 @@
 
 <suite name="Open Cart Test Suite" verbose="4"  thread-count="4" parallel="tests">
 <test name="Open Cart Home page test_chrome">
-
+       <parameter name = "browser" value ="chrome"> </parameter>
        <classes>
 			<class name="com.qa.opencart.tests.HomePageTest" />
        </classes> 
 </test>
 
 <test name="Open Cart login page test_chrome">
-
+       <parameter name = "browser" value ="edge"> </parameter>
        <classes>	
 				<class name="com.qa.opencart.tests.LoginPageTest" />
        </classes>	

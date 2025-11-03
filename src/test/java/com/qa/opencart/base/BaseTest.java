@@ -56,7 +56,7 @@ public class BaseTest {
     // Try classpath: src/test/resources/config/config.properties
     try (InputStream in = Thread.currentThread()
         .getContextClassLoader()
-        .getResourceAsStream("config/config.properties")) {
+        .getResourceAsStream("./src/test/resources/config/config.properties")) {
       if (in != null) {
         Properties p = new Properties();
         p.load(in);
